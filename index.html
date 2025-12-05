@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<HTML lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Students Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Students Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form" method="post">
+      <label for="name" id="name-label">Name<input type="text" name="name" id="name" placeholder="Enter Your Name" required /></label>
+      <label for="email" id="email-label">Email<input type="email" name="email" id="email" placeholder="Enter Your Email" required /></label>
+      <label for="age" id="number-label">Age(optional)<input min="13" max="120" type="number" name="age" id="number" placeholder="Age"/></label>
+      <label for="dropdown">Subject
+        <select id="dropdown"  name="dropdown">
+          <option value="0">Select your subject</option>
+          <option value="1">General Inquiry</option>
+          <option value="2">Support</option>
+          <option value="3">Feedback</option>
+          <option value="4">Other</option>
+         </select>
+       </label>
+        <label>Subscribe to newsletter:
+         <label for="Yes"> <input checked type="radio" value="yes" class="inline" name="subscribe" id="yes" />Yes</label>
+         <label for="No"><input type="radio" value="no" class="inline" name="subscribe" id="no" />No</label>
+        </label>
+        <label>Preferred Contact Method:
+         <label for="email"><input type="checkbox" name="contactmethod" id="email" value="email" class="inline" />Email</label>
+         <label for="mobile"><input type="checkbox" name="contactmethod" id="mobile" value="mobile" class="inline"/>Mobile Phone</label>
+         </label>
+       <label for="comments" >Any comments or suggestions?
+         <textarea name="comments" id="comments" rows="5" cols="30" placeholder="Enter your comment here..." ></textarea>
+         </label>
+         <input type="submit" id="submit" name="Submit" />
+        </form>
+  </body>
+          
+</HTML>
